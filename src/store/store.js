@@ -1,0 +1,134 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+import mutations from './mutation.js'
+import actions from './action.js'
+
+Vue.use(Vuex)
+
+const state = {
+	level:"第一周",//周数
+	itemNum:1,//第几题
+	allTime:0,//全部时间
+	timer:'',//定时器
+	recordList:[],
+	itemDetail:[
+		{
+			topic_name:"主题一",
+			topic_ansers:[
+				{
+					anser_id:"1",
+					anser_name:'答案A'
+				},
+				{
+					anser_id:"2",
+					anser_name:'答案B'
+				},
+				{
+					anser_id:"3",
+					anser_name:'答案C'
+				},
+				{
+					anser_id:"4",
+					anser_name:'答案D'
+				}
+			]
+		},
+		{
+			topic_name:"主题二",
+			topic_question:"我他妈的是问题2？？",
+			topic_ansers:[
+				{
+					anser_id:"1",
+					anser_name:'答案A'
+				},
+				{
+					anser_id:"2",
+					anser_name:'答案B'
+				},
+				{
+					anser_id:"3",
+					anser_name:'答案C'
+				},
+				{
+					anser_id:"4",
+					anser_name:'答案D'
+				}
+			]
+		},
+		{
+			topic_name:"主题三",
+			topic_question:"我他妈的是问题3？？",
+			topic_ansers:[
+				{
+					anser_id:"1",
+					anser_name:'答案A'
+				},
+				{
+					anser_id:"2",
+					anser_name:'答案B'
+				},
+				{
+					anser_id:"3",
+					anser_name:'答案C'
+				},
+				{
+					anser_id:"4",
+					anser_name:'答案D'
+				}
+			]
+		},
+		{
+			topic_name:"主题四",
+			topic_question:"我他妈的是问题3？？",
+			topic_ansers:[
+				{
+					anser_id:"1",
+					anser_name:'答案A'
+				},
+				{
+					anser_id:"2",
+					anser_name:'答案B'
+				},
+				{
+					anser_id:"3",
+					anser_name:'答案C'
+				},
+				{
+					anser_id:"4",
+					anser_name:'答案D'
+				}
+			]
+		},
+		{
+			topic_name:"主题五",
+			topic_question:"我他妈的是问题3？？",
+			topic_ansers:[
+				{
+					anser_id:"1",
+					anser_name:'答案A'
+				},
+				{
+					anser_id:"2",
+					anser_name:'答案B'
+				},
+				{
+					anser_id:"3",
+					anser_name:'答案C'
+				},
+				{
+					anser_id:"4",
+					anser_name:'答案D'
+				}
+			]
+		}
+	]
+	
+
+
+}
+
+export default new Vuex.Store({
+	state,
+	actions,
+	mutations
+})
